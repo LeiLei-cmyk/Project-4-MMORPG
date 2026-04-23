@@ -152,3 +152,7 @@
 *.uss eol=lf
 *.yml eol=lf
 *.meta eol=lf
+*.inputactions eol=lf
+*.wlt eol=lf
+*.mvfrm.rsp eol=lf
+*.footignore eol=lf
