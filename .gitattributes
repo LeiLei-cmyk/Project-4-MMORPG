@@ -140,3 +140,15 @@
 *.tar lfs-file
 
 *.cs eol=lf
+*.json eol=lf
+*.rsp eol=lf
+*.info eol=lf
+*.txt eol=lf
+*.md eol=lf
+*.shadergraph eol=lf
+*.lighting eol=lf
+*.asmref eol=lf
+*.uxlm eol=lf
+*.uss eol=lf
+*.yml eol=lf
+*.meta eol=lf
