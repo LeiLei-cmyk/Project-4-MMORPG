@@ -1,5 +1,7 @@
-using UnityEngine;
+using System;
 using Unity.Netcode;
+using UnityEngine;
+
 public class GameManager : NetworkBehaviour
 {
     [SerializeField]
@@ -15,20 +17,21 @@ public class GameManager : NetworkBehaviour
         }
     }
 
-    private void StartHost()
-    {
-       m_multiplayerUI.DisableButtons();
-       NetworkManager.StartHost();
-    }
-
-    private void StartClient()
-    {
-       m_multiplayerUI.DisableButtons();
-         NetworkManager.StartClient();
-    }
     private void DisconnectClient()
     {
         m_multiplayerUI.EnableButtons();
         NetworkManager.Shutdown();
+    }
+
+    private void StartClient()
+    {
+        m_multiplayerUI.DisableButtons();
+        NetworkManager.StartClient();
+    }
+
+    private void StartHost()
+    {
+        m_multiplayerUI.DisableButtons();
+        NetworkManager.StartHost();
     }
 }
